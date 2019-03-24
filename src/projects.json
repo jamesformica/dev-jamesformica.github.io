@@ -1,6 +1,26 @@
 [
   {
     "name": [
+      "Thanos'",
+      "Fate"
+    ],
+    "tags": [
+      "React",
+      "Canvas"
+    ],
+    "url": "https://jamesformica.github.io/thanos-fate/",
+    "github": "https://github.com/jamesformica/thanos-fate",
+    "bgPosition": "50% 100%",
+    "image": [
+      "thanoshome",
+      "thanosalive",
+      "thanosdead"
+    ],
+    "markdown": "thanos",
+    "style": "bigbird"
+  },
+  {
+    "name": [
       "Fourier",
       "Circles"
     ],

@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import Markdown from 'react-markdown'
-import { Collapse } from 'react-collapse'
 
 import Link from './Link'
 import Carousel from './Carousel'
@@ -37,7 +36,6 @@ class Project extends Component {
   state = {
     markdown: null,
     isInViewport: false,
-    isOpen: false,
   }
 
   componentWillMount() {
@@ -49,18 +47,13 @@ class Project extends Component {
     }
   }
 
-  toggle = () => {
-    const { isOpen } = this.state
-    this.setState({ isOpen: !isOpen })
-  }
-
   inViewport = () => {
     this.setState({ isInViewport: true })
   }
 
   render() {
     const { project } = this.props
-    const { markdown, isOpen, isInViewport } = this.state
+    const { markdown, isInViewport } = this.state
     const isCarousel = !!project.image.push
 
     const hasWebsite = !!project.url
@@ -106,12 +99,7 @@ class Project extends Component {
 
             {!!markdown && (
               <div className={styles.more}>
-                <button type="button" className={styles.toggle} onClick={this.toggle}>
-                  Want to know more?
-                </button>
-                <Collapse isOpened={isOpen}>
-                  <Markdown className={styles.markdown} source={markdown} />
-                </Collapse>
+                <Markdown className={styles.markdown} source={markdown} />
               </div>
             )}
           </div>
