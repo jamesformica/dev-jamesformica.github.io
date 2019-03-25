@@ -19,7 +19,11 @@ const InViewport = ({ className, children, inViewport }) => {
       Monitor.remove(uuid)
       inViewport()
     })
-  }, [])
+
+    return () => {
+      Monitor.remove(uuid.current)
+    }
+  })
 
   return (
     <div ref={monitorEl} className={className}>
