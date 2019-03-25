@@ -14,6 +14,7 @@ const Next = ({ nextSlide }) => (
 const Carousel = ({ children }) => (
   <NukaCarousel
     wrapAround
+    className={styles.nuka}
     renderBottomCenterControls={null}
     renderCenterLeftControls={Previous}
     renderCenterRightControls={Next}

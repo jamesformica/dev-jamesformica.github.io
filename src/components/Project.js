@@ -1,112 +1,75 @@
-import React, { Component } from 'react'
+import React, { useState, useEffect } from 'react'
 import Markdown from 'react-markdown'
 
+import { loadMarkdown, imgStyles, buildName } from '../helpers/projectHelper'
 import Link from './Link'
 import Carousel from './Carousel'
 import InViewport from '../helpers/InViewport'
 import styles from './Project.css'
 
-import * as images from '../images'
-import * as projects from '../markdown'
+const Project = ({ project }) => {
+  const [markdown, setMarkdown] = useState('')
+  const [isInViewport, setIsInViewport] = useState(false)
 
-const imgStyles = (image, bgPosition) => ({
-  width: '100%',
-  backgroundImage: `url('${images[image]}')`,
-  backgroundSize: 'cover',
-  backgroundPosition: 'center',
-  border: 0,
-  ...(bgPosition && { backgroundPosition: bgPosition }),
-})
-
-const loadMarkdown = markdown => (
-  new Promise((resolve) => {
-    global.fetch(projects[markdown])
-      .then(response => response.text())
-      .then(md => resolve(md))
-  })
-)
-
-const buildName = name => (
-  name.map((n, i) => (
-    <span key={n} className={i % 2 ? styles.titleBold : styles.title}>{n}</span>
-  ))
-)
-
-class Project extends Component {
-  state = {
-    markdown: null,
-    isInViewport: false,
-  }
-
-  componentWillMount() {
-    const { markdown: currentMd } = this.state
-    const { project: { markdown } } = this.props
-
-    if (!currentMd && markdown) {
-      loadMarkdown(markdown).then(md => this.setState({ markdown: md }))
+  useEffect(() => {
+    if (project.markdown) {
+      loadMarkdown(project.markdown).then(md => setMarkdown(md))
     }
-  }
+  }, [])
 
-  inViewport = () => {
-    this.setState({ isInViewport: true })
-  }
+  const isCarousel = !!project.image.push
+  const hasWebsite = !!project.url
+  const hasCode = !!project.github
 
-  render() {
-    const { project } = this.props
-    const { markdown, isInViewport } = this.state
-    const isCarousel = !!project.image.push
+  return (
+    <div className={styles[project.style]}>
+      <div className={styles.project}>
+        <div className={styles.image}>
+          {isInViewport && isCarousel && (
+            <Carousel>
+              {project.image.map(img => (
+                <Link
+                  noHover
+                  to={project.url}
+                  key={img}
+                  style={imgStyles(img, project.bgPosition)}
+                  className={styles.image}
+                />
+              ))}
+            </Carousel>
+          )}
 
-    const hasWebsite = !!project.url
-    const hasCode = !!project.github
+          {isInViewport && !isCarousel && (
+            <Link noHover to={project.url} style={imgStyles(project.image, project.bgPosition)} />
+          )}
 
-    return (
-      <div className={styles[project.style]}>
-        <div className={styles.project} ref={(p) => { this.project = p }}>
-          <div className={styles.image}>
-            {isInViewport && isCarousel && (
-              <Carousel>
-                {project.image.map(img => (
-                  <Link
-                    noHover
-                    to={project.url}
-                    key={img}
-                    style={imgStyles(img, project.bgPosition)}
-                    className={styles.image}
-                  />
-                ))}
-              </Carousel>
-            )}
+          {!isInViewport && (
+            <InViewport inViewport={() => setIsInViewport(true)} className={styles.viewport} />
+          )}
+        </div>
 
-            {isInViewport && !isCarousel && (
-              <Link noHover to={project.url} style={imgStyles(project.image, project.bgPosition)} />
-            )}
+        <div className={styles.content}>
+          <div className={styles.mainTitle}>
+            <h2 className={styles.name}>
+              {buildName(project.name, styles.titleBold, styles.title)}
+            </h2>
 
-            {!isInViewport && (
-              <InViewport inViewport={this.inViewport} className={styles.viewport} />
-            )}
+            <span className={styles.links}>
+              {hasWebsite && <Link primary to={project.url}>website</Link>}
+              {hasWebsite && hasCode && ' / '}
+              {hasCode && <Link to={project.github}>code</Link>}
+            </span>
           </div>
 
-          <div className={styles.content}>
-            <div className={styles.mainTitle}>
-              <h2 className={styles.name}>{buildName(project.name)}</h2>
-
-              <span className={styles.links}>
-                {hasWebsite && <Link to={project.url}>website</Link>}
-                {hasWebsite && hasCode && ' / '}
-                {hasCode && <Link to={project.github}>code</Link>}
-              </span>
+          {!!markdown && (
+            <div className={styles.more}>
+              <Markdown className={styles.markdown} source={markdown} />
             </div>
-
-            {!!markdown && (
-              <div className={styles.more}>
-                <Markdown className={styles.markdown} source={markdown} />
-              </div>
-            )}
-          </div>
+          )}
         </div>
       </div>
-    )
-  }
+    </div>
+  )
 }
 
 export default Project

@@ -19,7 +19,7 @@ const StlyedLink = styled.a`
   `}
 
   ${props => props.primary && css`
-    color: blueviolet;
+    color: deeppink;
   `}
 
   ${props => props.secondary && css`
