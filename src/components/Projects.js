@@ -1,25 +1,19 @@
-import React, { useState } from 'react'
+import React from 'react'
 
 import { filterProjects, getFilters } from '../helpers/projectsHelper'
-import Container from './Container'
+import useFilters from '../hooks/useFilters'
 import FilterButton from './FilterButton'
+import Container from './Container'
 import Filters from './Filters'
 import Project from './Project'
+
 import projects from '../projects.json'
 import styles from './Projects.css'
 
 const FILTERS = getFilters(projects)
 
 const Projects = () => {
-  const [activeFilters, setActiveFilters] = useState([])
-
-  const toggleFilter = (text) => {
-    if (activeFilters.includes(text)) {
-      setActiveFilters(activeFilters.filter(f => f !== text))
-    } else {
-      setActiveFilters([...activeFilters, ...[text]])
-    }
-  }
+  const [activeFilters, toggleFilter, clearFilters] = useFilters()
 
   const filteredProjects = filterProjects(projects, activeFilters)
 
@@ -30,8 +24,9 @@ const Projects = () => {
           key="Show"
           text={`Show all (${projects.length})`}
           isActive={!activeFilters.length}
-          onClick={() => setActiveFilters([])}
+          onClick={clearFilters}
         />
+
         {FILTERS.map(f => (
           <FilterButton
             key={f}
