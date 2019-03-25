@@ -1,29 +1,39 @@
-import React, { Component } from 'react'
+import React, { useState, useRef, useEffect } from 'react'
+import noop from 'lodash/noop'
+
 import Observer from './Observer'
 import Scroller from './Scroller'
 
-class InViewport extends Component {
-  componentDidMount() {
-    const { inViewport } = this.props
-    const Monitor = this.isProgressive() ? Observer : Scroller
+const Monitor = global.window.IntersectionObserver ? Observer : Scroller
 
-    this.viewportMonitor = new Monitor(this.element, inViewport)
-    this.viewportMonitor.monitor()
-  }
+const InViewport = ({ className, children, inViewport }) => {
+  const [isInViewport, setIsInViewport] = useState(false)
+  const monitorEl = useRef()
+  const uuid = useRef()
 
-  componentWillUnmount() {
-    this.viewportMonitor.remove()
-  }
+  const deferRender = Child => (isInViewport ? Child : null)
 
-  isProgressive = () => !!global.window.IntersectionObserver
+  useEffect(() => {
+    uuid.current = Monitor.monitor(monitorEl.current, () => {
+      setIsInViewport(true)
+      Monitor.remove(uuid)
+      inViewport()
+    })
+  }, [])
 
-  setRef = (el) => { this.element = el }
+  return (
+    <div ref={monitorEl} className={className}>
+      {typeof children === 'function'
+        ? children({ isInViewport, deferRender })
+        : isInViewport && children
+      }
+    </div>
+  )
+}
 
-  render = () => {
-    const { children, inViewport, ...rest } = this.props
-
-    return <div ref={this.setRef} {...rest}>{children}</div>
-  }
+InViewport.defaultProps = {
+  inViewport: noop,
+  className: '',
 }
 
 export default InViewport
