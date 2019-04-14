@@ -1,0 +1,3 @@
+For the longest time I've wanted to build some sort of visualiser for Spotify. I knew I didn't want to build a typical crazy visual canvas app, and then it hit me. Let's go retro!
+
+Building a CSS record player was actually quite fun, I could have spent countless more hours fine tuning it. Hooking up the Spotify API was brilliantly simple and then it was just a matter of some cool animations when the song changes. Really happy with how this turned out.

@@ -1,6 +1,21 @@
 [
   {
     "name": [
+      "Spotify™️",
+      "Turntable"
+    ],
+    "tags": [
+      "React"
+    ],
+    "url": "https://jamesformica.github.io/spotify-turntable/",
+    "github": "https://github.com/jamesformica/spotify-turntable",
+    "bgPosition": "50% 100%",
+    "image": "turntable",
+    "markdown": "turntable",
+    "style": "elmo"
+  },
+  {
+    "name": [
       "Thanos'",
       "Fate"
     ],
