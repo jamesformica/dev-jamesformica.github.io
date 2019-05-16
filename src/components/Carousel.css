@@ -1,42 +1,22 @@
 .nuka {
   height: 100% !important;
-
-  & [class^="slider-control"] {
-    height: 100%;
-  }
 }
 
 .arrow {
   color: white;
-  background: rgba(0, 0, 0, 0.2);
+  background: rgba(0, 0, 0, 0.8);
   width: 2.5rem;
-  height: 100%;
+  height: 2.5rem;
   border: 0;
-  font-size: 1.5rem;
+  font-size: 1rem;
   outline: none;
   cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 0.25rem;
 
   &:hover {
     background: rgba(0, 0, 0, 0.5);
   }
-
-  @media (max-width: 60rem) {
-    width: 1.5rem;
-    font-size: 1rem;
-  }
-}
-
-.previous {
-  composes: arrow;
-  border-top-right-radius: 50%;
-  border-bottom-right-radius: 50%;
-}
-
-.next {
-  composes: arrow;
-  border-top-left-radius: 50%;
-  border-bottom-left-radius: 50%;
 }

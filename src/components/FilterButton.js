@@ -10,13 +10,13 @@ const StyledButton = styled.button`
   cursor: pointer;
 
   ${props => props.isActive && css`
-    background: white;
-    color: black;
+    background: black;
+    color: white;
   `}
 
   ${props => !props.isActive && css`
-    background: black;
-    color: white;
+    background: white;
+    color: black;
   `}
 `
 

@@ -10,7 +10,7 @@ const links = [
 
 const Videos = () => (
   <Container>
-    <div className={styles.videos}>
+    <div className={styles.videos} dir="ltr">
       {links.map(link => (
         <div className={styles.video}>
           <p>{link.title}</p>
@@ -22,6 +22,13 @@ const Videos = () => (
             frameBorder="0"
             allow="autoplay; encrypted-media"
             allowFullscreen
+          />
+          {/* eslint-disable-next-line jsx-a11y/anchor-has-content */}
+          <a
+            target="_blank"
+            href={`https://www.youtube.com/playlist?list=${link.id}`}
+            rel="noopener noreferrer"
+            className={styles.overlay}
           />
         </div>
       ))}
