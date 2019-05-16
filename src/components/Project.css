@@ -1,8 +1,7 @@
 .project {
   width: 100%;
   min-height: 32rem;
-  margin-top: 6rem;
-  margin-bottom: 6rem;
+  margin-bottom: 10rem;
   background: white;
   border: 0.5rem solid black;
   display: flex;
