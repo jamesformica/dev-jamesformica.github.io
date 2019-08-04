@@ -12,13 +12,7 @@ export const imgStyles = (image, bgPosition) => ({
   ...(bgPosition && { backgroundPosition: bgPosition }),
 })
 
-export const loadMarkdown = markdown => (
-  new Promise((resolve) => {
-    global.fetch(markdownFiles[markdown])
-      .then(response => response.text())
-      .then(md => resolve(md))
-  })
-)
+export const loadMarkdown = markdown => markdownFiles[markdown]
 
 export const buildName = (name, even, odd) => (
   name.map((n, i) => (

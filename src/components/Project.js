@@ -1,5 +1,4 @@
-import React, { useState, useEffect } from 'react'
-import Markdown from 'react-markdown'
+import React, { useState } from 'react'
 
 import { loadMarkdown, imgStyles, buildName } from '../helpers/projectHelper'
 import Link from './Link'
@@ -8,14 +7,7 @@ import InViewport from '../helpers/InViewport'
 import styles from './Project.css'
 
 const Project = ({ project }) => {
-  const [markdown, setMarkdown] = useState('')
   const [isInViewport, setIsInViewport] = useState(false)
-
-  useEffect(() => {
-    if (project.markdown) {
-      loadMarkdown(project.markdown).then(md => setMarkdown(md))
-    }
-  }, [])
 
   const isCarousel = !!project.image.push
   const hasWebsite = !!project.url
@@ -61,10 +53,11 @@ const Project = ({ project }) => {
             </span>
           </div>
 
-          {!!markdown && (
-            <div className={styles.more}>
-              <Markdown className={styles.markdown} source={markdown} />
-            </div>
+          {!!project.markdown && (
+            <div
+              className={styles.more}
+              dangerouslySetInnerHTML={{ __html: loadMarkdown(project.markdown) }}
+            />
           )}
         </div>
       </div>

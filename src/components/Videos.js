@@ -12,7 +12,7 @@ const Videos = () => (
   <Container>
     <div className={styles.videos} dir="ltr">
       {links.map(link => (
-        <div className={styles.video}>
+        <div className={styles.video} key={link.title}>
           <p>{link.title}</p>
           <iframe
             title={link.title}
@@ -21,7 +21,7 @@ const Videos = () => (
             src={`https://www.youtube.com/embed/videoseries?list=${link.id}`}
             frameBorder="0"
             allow="autoplay; encrypted-media"
-            allowFullscreen
+            allowFullScreen
           />
           {/* eslint-disable-next-line jsx-a11y/anchor-has-content */}
           <a

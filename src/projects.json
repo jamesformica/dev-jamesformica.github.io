@@ -1,6 +1,42 @@
 [
   {
     "name": [
+      "Word",
+      "ly"
+    ],
+    "tags": [
+      "React",
+      "Hooks",
+      "Art"
+    ],
+    "url": "https://jamesformica.github.io/wordly/",
+    "github": "https://github.com/jamesformica/wordly",
+    "bgPosition": "top center",
+    "image": "wordly",
+    "markdown": "wordly",
+    "style": "bigbird"
+  },
+  {
+    "name": [
+      "",
+      "Hook",
+      "ed"
+    ],
+    "tags": [
+      "React",
+      "Hooks",
+      "Game",
+      "Crazy"
+    ],
+    "url": "https://hooked.fun/",
+    "github": "https://github.com/jamesformica/hooked",
+    "bgPosition": "top center",
+    "image": "hooked",
+    "markdown": "hooked",
+    "style": "bigbird"
+  },
+  {
+    "name": [
       "CSS Grid",
       "City"
     ],
