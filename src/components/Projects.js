@@ -7,7 +7,7 @@ import Container from './Container'
 import Filters from './Filters'
 import Project from './Project'
 
-import projects from '../projects.json'
+import projects from '../projects'
 import styles from './Projects.css'
 
 const FILTERS = getFilters(projects)

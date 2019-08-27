@@ -1,0 +1,577 @@
+import { TYPE, TAG } from './constants'
+
+export default [
+  {
+    name: [
+      'Bi',
+      'cycles',
+    ],
+    tags: [
+      TAG.art,
+      TAG.rea,
+    ],
+    url: 'https://jamesformica.github.io/bicycles/',
+    github: 'https://github.com/jamesformica/bicycles',
+    image: 'bicycles',
+    markdown: 'bicycles',
+    style: TYPE.elmo,
+  },
+  {
+    name: [
+      'JD',
+      '@',
+      'DDD',
+    ],
+    tags: [
+      TAG.crazy,
+    ],
+    url: 'https://jamesformica.github.io/junior-dev-community-site-ddd-2019/',
+    github: 'https://github.com/jamesformica/junior-dev-community-site-ddd-2019',
+    bgPosition: 'top center',
+    image: 'ddd',
+    markdown: 'ddd',
+    style: TYPE.elmo,
+  },
+  {
+    name: [
+      'Word',
+      'ly',
+    ],
+    tags: [
+      TAG.react,
+      TAG.hooks,
+      TAG.art,
+    ],
+    url: 'https://jamesformica.github.io/wordly/',
+    github: 'https://github.com/jamesformica/wordly',
+    bgPosition: 'top center',
+    image: 'wordly',
+    markdown: 'wordly',
+    style: TYPE.bigbird,
+  },
+  {
+    name: [
+      '',
+      'Hook',
+      'ed',
+    ],
+    tags: [
+      TAG.react,
+      TAG.hooks,
+      TAG.game,
+      TAG.crazy,
+    ],
+    url: 'https://hooked.fun/',
+    github: 'https://github.com/jamesformica/hooked',
+    bgPosition: 'top center',
+    image: 'hooked',
+    markdown: 'hooked',
+    style: TYPE.bigbird,
+  },
+  {
+    name: [
+      'CSS Grid',
+      'City',
+    ],
+    tags: [
+      TAG.css,
+    ],
+    url: 'https://jamesformica.github.io/grid-city/',
+    github: 'https://github.com/jamesformica/grid-city',
+    bgPosition: '50% 100%',
+    image: 'gridcity',
+    markdown: 'gridcity',
+    style: TYPE.elmo,
+  },
+  {
+    name: [
+      'Spotify™️',
+      'Turntable',
+    ],
+    tags: [
+      TAG.react,
+    ],
+    url: 'https://jamesformica.github.io/spotify-turntable/',
+    github: 'https://github.com/jamesformica/spotify-turntable',
+    bgPosition: '50% 100%',
+    image: 'turntable',
+    markdown: 'turntable',
+    style: TYPE.elmo,
+  },
+  {
+    name: [
+      "Thanos'",
+      'Fate',
+    ],
+    tags: [
+      TAG.react,
+      TAG.canvas,
+    ],
+    url: 'https://jamesformica.github.io/thanos-fate/',
+    github: 'https://github.com/jamesformica/thanos-fate',
+    bgPosition: '50% 100%',
+    image: [
+      'thanoshome',
+      'thanosalive',
+      'thanosdead',
+    ],
+    markdown: 'thanos',
+    style: TYPE.bigbird,
+  },
+  {
+    name: [
+      'Fourier',
+      'Circles',
+    ],
+    tags: [
+      TAG.canvas,
+      TAG.art,
+    ],
+    url: 'https://jamesformica.github.io/fourier-circles/',
+    github: 'https://github.com/jamesformica/fourier-circles',
+    bgPosition: '60% 50%',
+    image: 'fourier',
+    markdown: 'fourier',
+    style: TYPE.elmo,
+  },
+  {
+    name: [
+      'O(n)',
+      'Week+',
+    ],
+    tags: [
+      TAG.react,
+      TAG.canvas,
+    ],
+    url: 'https://jamesformica.github.io/onweek-schedule/',
+    bgPosition: 'center',
+    image: [
+      'onweekheader',
+      'onweekschedule',
+      'onweekcanvas',
+      'onweekfooter',
+    ],
+    markdown: 'onweek',
+    style: TYPE.bigbird,
+  },
+  {
+    name: [
+      'You',
+      'Tube',
+    ],
+    tags: [
+      TAG.tutorial,
+    ],
+    url: 'https://www.youtube.com/channel/UChUKUZTIK8eFDHSuX_5EBrA',
+    bgPosition: 'top left',
+    image: 'youtube',
+    markdown: 'youtube',
+    style: TYPE.elmo,
+  },
+  {
+    name: [
+      'Hub',
+      'ly',
+    ],
+    tags: [
+      TAG.react,
+      TAG.rea,
+    ],
+    bgPosition: 'top center',
+    image: [
+      'hublyhome',
+      'hublymap',
+      'hublycarbon',
+      'hublytime',
+    ],
+    markdown: 'hubly',
+    style: TYPE.bigbird,
+  },
+  {
+    name: [
+      'One',
+      'Team',
+    ],
+    tags: [
+      TAG.react,
+      TAG.rea,
+      TAG.graphql,
+    ],
+    bgPosition: 'top center',
+    image: [
+      'oneteamdashboard',
+      'oneteamnewsprint',
+      'oneteamcalendar',
+      'oneteamretro',
+    ],
+    markdown: 'oneteam',
+    style: TYPE.bigbird,
+  },
+  {
+    name: [
+      'CSS',
+      'Monster',
+    ],
+    tags: [
+      TAG.css,
+      TAG.art,
+    ],
+    url: 'https://jamesformica.github.io/css-monster/',
+    github: 'https://github.com/jamesformica/css-monster',
+    image: 'monster',
+    style: TYPE.bigbird,
+  },
+  {
+    name: [
+      'Dear',
+      'Rent',
+      'Diary',
+    ],
+    tags: [
+      TAG.react,
+      TAG.canvas,
+      TAG.game,
+      TAG.crazy,
+      TAG.rea,
+    ],
+    url: 'https://jamesformica.github.io/dear-rent-diary/',
+    github: 'https://github.com/jamesformica/dear-rent-diary',
+    image: 'rent',
+    markdown: 'rent',
+    style: TYPE.elmo,
+  },
+  {
+    name: [
+      'Lindenmayer',
+      'Aquarium',
+    ],
+    tags: [
+      TAG.canvas,
+      TAG.art,
+    ],
+    url: 'https://jamesformica.github.io/Lindenmayer-Aquarium/',
+    github: 'https://github.com/jamesformica/Lindenmayer-Aquarium',
+    image: 'aquarium',
+    markdown: 'aquarium',
+    style: TYPE.elmo,
+  },
+  {
+    name: [
+      'L-System',
+      'Art',
+    ],
+    tags: [
+      TAG.canvas,
+      TAG.art,
+    ],
+    url: 'https://jamesformica.github.io/L-System-Fun/',
+    github: 'https://github.com/jamesformica/L-System-Fun',
+    image: 'lsystem',
+    markdown: 'lsystem',
+    style: TYPE.bigbird,
+  },
+  {
+    name: [
+      'CSS',
+      'Car',
+    ],
+    tags: [
+      TAG.css,
+      TAG.art,
+    ],
+    url: 'https://jamesformica.github.io/css-car/',
+    github: 'https://github.com/jamesformica/css-car',
+    image: 'csscar',
+    markdown: 'csscar',
+    style: TYPE.elmo,
+  },
+  {
+    name: [
+      'CSS',
+      'House',
+    ],
+    tags: [
+      TAG.css,
+      TAG.art,
+    ],
+    url: 'https://jamesformica.github.io/css-house/',
+    github: 'https://github.com/jamesformica/css-house',
+    image: 'csshouse',
+    markdown: 'csshouse',
+    style: TYPE.elmo,
+  },
+  {
+    name: [
+      'CSS',
+      'Traffic',
+      'Light',
+    ],
+    tags: [
+      TAG.css,
+      TAG.art,
+    ],
+    url: 'https://jamesformica.github.io/css-trafficlight/',
+    github: 'https://github.com/jamesformica/css-trafficlight',
+    image: 'csstrafficlight',
+    markdown: 'csstrafficlight',
+    style: TYPE.elmo,
+  },
+  {
+    name: [
+      'CSS',
+      'Goldfish',
+    ],
+    tags: [
+      TAG.css,
+      TAG.art,
+    ],
+    url: 'https://jamesformica.github.io/css-goldfish/',
+    github: 'https://github.com/jamesformica/css-goldfish',
+    image: 'cssgoldfish',
+    style: TYPE.bigbird,
+  },
+  {
+    name: [
+      'Canvas',
+      'Madness',
+    ],
+    tags: [
+      TAG.presentation,
+    ],
+    url: 'https://jamesformica.github.io/canvas-madness/',
+    github: 'https://github.com/jamesformica/canvas-madness',
+    image: 'canvasmadness',
+    markdown: 'canvasmadness',
+    style: TYPE.elmo,
+  },
+  {
+    name: [
+      'Llama',
+      'rama',
+    ],
+    tags: [
+      TAG.react,
+      TAG.canvas,
+      TAG.game,
+    ],
+    url: 'https://jamesformica.github.io/llamarama/',
+    github: 'https://github.com/jamesformica/llamarama',
+    image: 'llamarama',
+    markdown: 'llamarama',
+    bgPosition: 'left center',
+    style: TYPE.elmo,
+  },
+  {
+    name: [
+      'Line',
+      'Art',
+    ],
+    tags: [
+      TAG.canvas,
+      TAG.art,
+    ],
+    url: 'https://jamesformica.github.io/lineart/',
+    github: 'https://github.com/jamesformica/lineart',
+    image: 'lineart',
+    markdown: 'lineart',
+    style: TYPE.bigbird,
+  },
+  {
+    name: [
+      'Sketch',
+      'ly',
+    ],
+    tags: [
+      TAG.react,
+      TAG.canvas,
+      TAG.game,
+    ],
+    url: 'https://sketchly.netlify.com/',
+    github: null,
+    image: 'sketchly',
+    markdown: 'sketchly',
+    bgPosition: 'left center',
+    style: TYPE.elmo,
+  },
+  {
+    name: [
+      'Mood',
+      'ly',
+    ],
+    tags: [
+      TAG.canvas,
+      TAG.art,
+      TAG.crazy,
+    ],
+    url: 'https://jamesformica.github.io/moodly/',
+    github: 'https://github.com/jamesformica/moodly',
+    image: 'moodly',
+    markdown: 'moodly',
+    style: TYPE.elmo,
+  },
+  {
+    name: [
+      'CSS',
+      'Grid',
+    ],
+    tags: [
+      TAG.presentation,
+      TAG.css,
+    ],
+    url: 'https://jamesformica.github.io/css-grids/',
+    github: 'https://github.com/jamesformica/css-grids',
+    image: 'cssgrid',
+    markdown: 'cssgrid',
+    style: TYPE.elmo,
+  },
+  {
+    name: [
+      'A.',
+      'C',
+      '.E',
+    ],
+    tags: [
+      TAG.crazy,
+    ],
+    url: 'https://jamesformica.github.io/ace/',
+    github: 'https://github.com/jamesformica/ace',
+    image: 'ace',
+    markdown: 'ace',
+    bgPosition: 'right center',
+    style: TYPE.elmo,
+  },
+  {
+    name: [
+      'My',
+      'Blog',
+      ' (inactive)',
+    ],
+    tags: [
+      TAG.blog,
+    ],
+    url: 'https://jamesformica.github.io/blog/',
+    github: 'https://github.com/jamesformica/blog',
+    image: 'blog',
+    bgPosition: 'left center',
+    markdown: 'blog',
+    style: TYPE.elmo,
+  },
+  {
+    name: [
+      'Split',
+      'tr',
+    ],
+    tags: [
+      TAG.canvas,
+      TAG.game,
+      TAG.sass,
+    ],
+    url: 'https://jamesformica.github.io/splittr',
+    github: 'https://github.com/jamesformica/splittr',
+    image: 'splittr',
+    markdown: 'splittr',
+    style: TYPE.elmo,
+  },
+  {
+    name: [
+      'Simple',
+      'Paint',
+    ],
+    tags: [
+      TAG.canvas,
+    ],
+    url: 'https://jamesformica.github.io/simplepaint',
+    github: 'https://github.com/jamesformica/simplepaint',
+    image: 'simplepaint',
+    markdown: 'simplepaint',
+    style: TYPE.elmo,
+  },
+  {
+    name: [
+      'Last',
+      'Hand',
+      'Standing',
+    ],
+    tags: [
+      TAG.game,
+      TAG.ruby,
+    ],
+    url: 'https://lasthandstanding.herokuapp.com',
+    github: 'https://github.com/julianrizzo/last-hand-standing-app',
+    image: 'lasthandstanding',
+    markdown: 'lasthandstanding',
+    style: TYPE.elmo,
+  },
+  {
+    name: [
+      'CSS',
+      'Playground',
+    ],
+    tags: [
+      TAG.presentation,
+      TAG.css,
+    ],
+    url: 'https://cssplayground.herokuapp.com',
+    github: 'https://github.com/jamesformica/fun-with-css',
+    image: 'cssplayground',
+    markdown: 'cssplayground',
+    style: TYPE.bigbird,
+  },
+  {
+    name: [
+      'Event',
+      'Timeline',
+    ],
+    tags: [],
+    url: '',
+    github: 'https://github.com/jamesformica/lot-2318-timeline',
+    image: 'eventtimeline',
+    markdown: 'eventtimeline',
+    style: TYPE.elmo,
+  },
+  {
+    name: [
+      'Eat',
+      'Week',
+    ],
+    tags: [],
+    url: '',
+    github: 'https://github.com/jamesformica/EatWeek',
+    image: 'eatweek',
+    markdown: 'eatweek',
+    style: TYPE.elmo,
+  },
+  {
+    name: [
+      'T',
+      'rains',
+    ],
+    tags: [
+      TAG.canvas,
+      TAG.game,
+    ],
+    url: 'https://jamesformica.github.io/trains',
+    github: 'https://github.com/jamesformica/Trains',
+    image: 'trains',
+    bgPosition: 'center',
+    markdown: 'trains',
+    style: TYPE.bigbird,
+  },
+  {
+    name: [
+      'Off',
+      'The',
+      'Record',
+    ],
+    tags: [
+      TAG.crazy,
+      TAG.ruby,
+    ],
+    url: 'https://offtherecord2.herokuapp.com',
+    github: 'https://github.com/jamesformica/off-the-record',
+    image: 'offtherecord',
+    markdown: 'offtherecord',
+    bgPosition: 'left center',
+    style: TYPE.elmo,
+  },
+]
