@@ -1,6 +1,36 @@
 [
   {
     "name": [
+      "Bi",
+      "cycles"
+    ],
+    "tags": [
+      "Art"
+    ],
+    "url": "https://jamesformica.github.io/bicycles/",
+    "github": "https://github.com/jamesformica/bicycles",
+    "image": "bicycles",
+    "markdown": "bicycles",
+    "style": "elmo"
+  },
+  {
+    "name": [
+      "JD",
+      "@",
+      "DDD"
+    ],
+    "tags": [
+      "Crazy"
+    ],
+    "url": "https://jamesformica.github.io/junior-dev-community-site-ddd-2019/",
+    "github": "https://github.com/jamesformica/junior-dev-community-site-ddd-2019",
+    "bgPosition": "top center",
+    "image": "ddd",
+    "markdown": "ddd",
+    "style": "elmo"
+  },
+  {
+    "name": [
       "Word",
       "ly"
     ],
