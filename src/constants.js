@@ -1,3 +1,6 @@
+const GITHUB = 'https://github.com/jamesformica/'
+const GITHUB_PAGES = 'https://jamesformica.github.io/'
+
 export const TYPE = {
   elmo: 'elmo',
   bigbird: 'bigbird',
@@ -19,3 +22,6 @@ export const TAG = {
   sass: 'SASS',
   ruby: 'Ruby',
 }
+
+export const github = name => `${GITHUB}${name}`
+export const pages = name => `${GITHUB_PAGES}${name}/`
