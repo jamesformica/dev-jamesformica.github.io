@@ -1,0 +1,3 @@
+The main goal of [HacktoberFEST](https://hacktoberfest.digitalocean.com/) is to become familiar and contribute to open source projects with the promise of a cool t-shirt if you follow through! With the help of IRESS, the JuniorDev community hosted an even where we would teach participants how to use Git and get them involved in an open source project to help kick off their HacktoberFEST journey.
+
+I created the base of this project that would allow anyone to add their own custom sub page and add whatever they wanted to it. Due to it being close to Halloween we decided to go with a spooky theme. Some of the participant's pages are absolutely incredible! In the end we had 67 submissions!

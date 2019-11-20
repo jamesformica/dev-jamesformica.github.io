@@ -3,6 +3,20 @@ import { TYPE, TAG, github, pages } from './constants'
 export default [
   {
     name: [
+      'JuniorDev',
+      ' Hacktoberfest',
+    ],
+    tags: [
+      TAG.crazy,
+    ],
+    url: 'https://juniordevio.github.io/hacktoberfest-halloween-graffiti/',
+    github: 'https://github.com/juniordevio/hacktoberfest-halloween-graffiti',
+    image: 'hacktoberfest2019',
+    markdown: 'hacktoberfest2019',
+    style: TYPE.elmo,
+  },
+  {
+    name: [
       'Bi',
       'cycles',
     ],
