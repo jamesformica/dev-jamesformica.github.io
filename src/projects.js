@@ -3,6 +3,23 @@ import { TYPE, TAG, github, pages } from './constants'
 export default [
   {
     name: [
+      'REA quiz',
+      'ID',
+    ],
+    tags: [
+      TAG.rea,
+      TAG.game,
+      TAG.hooks,
+      TAG.graphql,
+    ],
+    url: 'https://pages.git.realestate.com.au/james-formica/quizID/',
+    github: 'https://git.realestate.com.au/james-formica/quizID',
+    image: ['quizID1', 'quizID2', 'quizID3', 'quizID4'],
+    markdown: 'quizID',
+    style: TYPE.bigbird,
+  },
+  {
+    name: [
       'JuniorDev',
       ' Hacktoberfest',
     ],
