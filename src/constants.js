@@ -8,19 +8,20 @@ export const TYPE = {
 
 export const TAG = {
   art: 'Art',
-  crazy: 'Crazy',
-  react: 'React',
-  hooks: 'Hooks',
-  game: 'Game',
-  css: 'CSS',
-  canvas: 'Canvas',
-  tutorial: 'Tutorial',
-  rea: 'REA',
-  graphql: 'GraphQL',
-  presentation: 'Presentation',
   blog: 'Blog',
-  sass: 'SASS',
+  buildpass: 'BuildPass',
+  canvas: 'Canvas',
+  crazy: 'Crazy',
+  css: 'CSS',
+  game: 'Game',
+  graphql: 'GraphQL',
+  hooks: 'Hooks',
+  presentation: 'Presentation',
+  rea: 'REA',
+  react: 'React',
   ruby: 'Ruby',
+  sass: 'SASS',
+  tutorial: 'Tutorial',
 }
 
 export const github = name => `${GITHUB}${name}`

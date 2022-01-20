@@ -3,6 +3,22 @@ import { TYPE, TAG, github, pages } from './constants'
 export default [
   {
     name: [
+      '',
+      'Build',
+      'Off',
+    ],
+    tags: [
+      TAG.game,
+      TAG.canvas,
+    ],
+    url: 'https://build-off.vercel.app/',
+    github: 'https://github.com/buildpass-au/build-off',
+    image: ['buildoff1', 'buildoff2', 'buildoff3', 'buildoff4', 'buildoff5', 'buildoff6'],
+    markdown: 'buildoff',
+    style: TYPE.bigbird,
+  },
+  {
+    name: [
       'REA quiz',
       'ID',
     ],
